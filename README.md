@@ -31,7 +31,8 @@ Can a deep learning model, specifically a Convolutional Neural Network (CNN), ef
 
 ### Data Sources
 The primary dataset used for this project is `malicious_phish.csv`. This dataset contains a collection of URLs, each labeled with its corresponding type.
-
+![WordMap-malware](images/malware_url.png)
+![WordMap-url](images/words.png)
 **Exploratory Data Analysis (EDA):**
 The initial phase involved a comprehensive exploration of the dataset to understand its characteristics and identify potential challenges.
 * **Dataset Overview:** The dataset contains two main columns: `url` (the actual URL string) and `type` (the classification label).
@@ -44,6 +45,10 @@ The initial phase involved a comprehensive exploration of the dataset to underst
     * `malware`: 32,520
     This highlights a significant class imbalance, particularly for the `malware` category.
 * **Visualizations:** A count plot was generated to visually represent the distribution of different attack types, confirming the imbalance. Word clouds were created for each URL type (e.g., phishing URLs) to visualize the most frequent words, providing insights into common patterns and keywords associated with specific threats.
+A count plot was generated to visually represent the distribution of different attack types, confirming the imbalance.  
+![URL Type Distribution](images/dataset1.png)
+
+
 
 **Cleaning and Preparation:**
 The provided notebook snippet does not explicitly show extensive data cleaning steps beyond initial loading and inspection. However, typical steps for such a dataset would include:
